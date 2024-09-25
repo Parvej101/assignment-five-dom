@@ -7,18 +7,25 @@
   <title>Donation project DOM</title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    *{
+      margin : 0;
+      padding: 0;
+    }
+  </style>
 </head>
 
 
-<body class="container mx-auto">
-  <header class="sticky top-0 mt-10 z-10">
-    <div class="navbar bg-base-200 px-8 py-6 ">
+
+<body class="lg:container w-11/12 mx-auto ">
+  <header class="sticky top-0 mt-10 z-10 mx auto">
+    <div class="navbar bg-base-200 lg:px-8 lg:py-6 w-full ">
       <div class="navbar-start">
         <div>
-          <button class="btn px-8 font-bold bg-green-400">Blog</button>
+          <button class="btn  flex lg:px-8 font-bold bg-green-400"><a href="faq.html" target="_blank" rel="noopener noreferrer">Blog</a></button>
         </div>
       </div>
-      <div class="navbar-center">
+      <div class="navbar-center hidden lg:flex">
         <img src="./assets/logo.png" alt="">
         <span class="font-bold pl-3">Donate Bangladesh</span>
       </div>
@@ -43,11 +50,11 @@
   
   <main id="main-container">
     <!-- image 1 -->
-    <div class="hero bg-base-200 px-10 py-10 rounded-md mt-10 mb-10">
+    <div class="hero bg-base-200 lg:px-10 lg:py-10 rounded-md mt-10 mb-10">
 
       <!-- Popup menu start  -->
       <div id="donate-popup" class="hidden">
-        <div class="z-10 card bg-base-100 w-96 shadow-xl">
+        <div class="z-10 card bg-base-100 lg:w-96 w-72 shadow-xl">
           <div class="card-body text-center">
             <h2 class="text-2xl font-bold">Congress!</h2>
             <p>You have donated for Humankind</p>
@@ -87,10 +94,10 @@
     </div>
 
     <!-- image 2 -->
-    <div class="hero bg-base-200 px-10 py-10 rounded-md mt-10 mb-10">
+    <div class="hero bg-base-200 lg:px-10 lg:py-10 rounded-md mt-10 mb-10">
 
       <div id="second-donate-popup" class="hidden">
-        <div class="z-10 card bg-base-100 w-96 shadow-xl">
+        <div class="z-10 card bg-base-100 lg:w-96 w-72 shadow-xl">
           <div class="card-body text-center">
             <h2 class="text-2xl font-bold">Congress!</h2>
             <p>You have donated for Humankind</p>
@@ -129,10 +136,10 @@
     </div>
 
     <!-- image 3 -->
-    <div class="hero bg-base-200 px-10 py-10 rounded-md mt-10 mb-10">
+    <div class="hero bg-base-200 lg:px-10 lg:py-10 rounded-md mt-10 mb-10">
 
       <div id="third-donate-popup" class="hidden">
-        <div class="z-10 card bg-base-100 w-96 shadow-xl">
+        <div class="z-10 card bg-base-100 lg:w-96 w-72 shadow-xl">
           <div class="card-body text-center">
             <h2 class="text-2xl font-bold">Congress!</h2>
             <p>You have donated for Humankind</p>
@@ -173,8 +180,6 @@
 
     <!-- Transaction history  -->
     
-
-    <div class="bg-orange-400 h-96"></div>
   </main>
 
 
